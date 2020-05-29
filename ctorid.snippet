@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>ctorid</Title>
+			<Shortcut>ctorid</Shortcut>
+			<Description>Code snippet for constructor with Id property</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>classname</ID>
+					<ToolTip>Class name</ToolTip>
+					<Function>ClassName()</Function>
+					<Default>ClassNamePlaceholder</Default>
+				</Literal>			
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Type of Id property</ToolTip>
+					<Default>Guid</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public $classname$ ($type$ id)
+	{
+		Id = id;
+		$end$
+	}
+	
+		public $type$ Id {get; set;}
+	]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

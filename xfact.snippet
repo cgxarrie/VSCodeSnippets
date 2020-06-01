@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>XUnit fact</Title>
+            <Author>cgxarrie</Author>
+            <Shortcut>xfact</Shortcut>
+        </Header>
+        <Snippet>
+		<Declarations>
+			<Literal>
+				<ID>action</ID>
+				<ToolTip>Test action</ToolTip>
+				<Default>TestAction</Default>
+			</Literal>
+			<Literal>
+				<ID>results</ID>
+				<ToolTip>Test results</ToolTip>
+				<Default>TestResults</Default>
+			</Literal>			
+		</Declarations>
+            <Code Language="CSharp">
+              <![CDATA[[Fact]
+        public  void $action$Should$results$()
+		{
+			  // Arrange
+              
+			  
+              // Act
+			  
+              
+              // Assert
+		}	  
+              ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

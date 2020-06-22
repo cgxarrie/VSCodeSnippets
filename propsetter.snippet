@@ -40,8 +40,14 @@
       
       public Result<$classname$> Set$name$ ($type$ $paramName$)
 	{
+		//TODO : implement validation if needed
+		if (validationNotPassed)
+		{
+			return this.Fail(Infrastructure.Messages.CustomErrorMessage);
+		}
+	
 		$name$ = $paramName$;
-		return Result.Success(this);
+		return this.Success();
 	}
 	]]>
 			</Code>

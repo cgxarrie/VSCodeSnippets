@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>nullret</Title>
+			<Shortcut>nullret</Shortcut>
+			<Description>Add null validation (return if null)</Description>
+			<Author>cgxarrie</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>item</ID>
+					<ToolTip>item to check</ToolTip>
+					<Default>item</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+        <![CDATA[
+		if ($item$ == null)
+		{
+			return;
+		}
+	]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

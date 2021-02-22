@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>propbool</Title>
+			<Shortcut>propbool</Shortcut>
+			<Description>Add boolean property</Description>
+			<Author>c#Odin</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>classname</ID>
+					<ToolTip>Class name</ToolTip>
+					<Function>ClassName()</Function>
+					<Default>ClassNamePlaceholder</Default>
+				</Literal>
+				<Literal>
+				  <ID>name</ID>
+				  <ToolTip>property name</ToolTip>
+				  <Default>MyProperty</Default>
+				</Literal>
+				<Literal>
+				  <ID>paramName</ID>
+				  <ToolTip>setter parameter name</ToolTip>
+				  <Default>value</Default>
+				</Literal>
+			</Declarations>
+		<Code Language="csharp">
+        <![CDATA[
+		public bool $name$ { get; set;}
+      
+	]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

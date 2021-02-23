@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>func</Title>
+			<Shortcut>func</Shortcut>
+			<Description>Create a function</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>returnType</ID>
+					<ToolTip>Type of return value</ToolTip>
+					<Default>returnType</Default>
+				</Literal>
+				<Literal>
+					<ID>funcname</ID>
+					<ToolTip>name of function</ToolTip>
+					<Default>FunctionName</Default>
+				</Literal>				
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public $returnType$ $funcname$ ()
+	{
+		$returnType$ returnValue = default;
+		$end$
+		return returnValue;
+	}
+	
+	]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

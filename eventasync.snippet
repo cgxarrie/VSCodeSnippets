@@ -2,8 +2,8 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>event</Title>
-			<Shortcut>event</Shortcut>
+			<Title>eventasync</Title>
+			<Shortcut>eventasync</Shortcut>
 			<Description>Event with EventHandler</Description>
 			<Author>cgxarrie</Author>
 			<SnippetTypes>
@@ -17,7 +17,7 @@
 					<Default>EventName</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[public delegate void $eventname$EventHandler(object sender, $eventname$EventArgs e);
+			<Code Language="csharp"><![CDATA[public delegate Task $eventname$EventHandler(object sender, $eventname$EventArgs e);
 
 			public event $eventname$EventHandler $eventname$;
 			
@@ -27,7 +27,6 @@
 			}
 			$end$
 	]]>
-			</Code>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

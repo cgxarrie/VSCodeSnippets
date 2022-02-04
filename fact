@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>fact</Title>
+			<Shortcut>fact</Shortcut>
+			<Description>Add XUnit Fact test method</Description>
+			<Author>cgxarrie</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>testCase</ID>
+					<Default>TestCase</Default>
+				</Literal>
+				<Literal>
+					<ID>expectedValue</ID>
+					<Default>ExpectedValue</Default>
+				</Literal>        
+			</Declarations>
+			<Code Language="csharp"><![CDATA[[Fact]
+public void $testCase$ShouldReturn$expectedValue$()
+  {
+    //arrange
+    $END$
+    
+    //act
+    
+    //assert
+  }
+	]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

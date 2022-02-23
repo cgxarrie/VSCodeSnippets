@@ -38,16 +38,16 @@
         <![CDATA[
 		public $type$ $name$ { get; private set;}
       
-      public Result<$classname$> Set$name$ ($type$ $paramName$)
+      public Result Set$name$ ($type$ $paramName$)
 	{
 		//TODO : implement validation if needed
 		if (validationNotPassed)
 		{
-			return this.Fail(Infrastructure.Messages.CustomErrorMessage);
+			return Result.Failure(message);
 		}
 	
 		$name$ = $paramName$;
-		return this.Success();
+		return Result.Success();
 	}
 	]]>
 			</Code>

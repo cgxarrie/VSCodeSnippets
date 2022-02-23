@@ -20,9 +20,21 @@
 				</Literal>			
 			</Declarations>		
 			<Code Language="csharp"><![CDATA[public static Result<$classname$> Create()
-	{
-		throw new System.NotImplementedException();
-	}
+		{
+			var instance = new $classname$();
+			var results = new List<Result>()
+			{
+				instance.SetProperty1(value1),
+				instance.SetProperty2(value2),
+				instance.SetProperty3(value3),
+			};
+
+				var combinedResult = results.Combine();
+
+				return combinedResult.IsSuccess
+					? Result.Success(instance)
+					: Result.Failure<Planet>(combinedResult.Error);
+		}
 	]]>
 			</Code>
 		</Snippet>
